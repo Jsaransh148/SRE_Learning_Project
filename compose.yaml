@@ -1,0 +1,7 @@
+services:
+  my-api:
+    build: .       # Build the Docker image from the current directory
+    image: server  # Name of the Docker image
+    ports:
+      - "8080:8443"  # Map host port 8080 to container port 8080
+    command: ["java", "-jar", "server.jar"]  # Command to run the application
