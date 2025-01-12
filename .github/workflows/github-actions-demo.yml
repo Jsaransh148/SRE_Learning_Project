@@ -9,5 +9,8 @@ jobs:
         - name: Checkout code
           uses: actions/checkout@v3
 
+        - name: location
+          run: pwd
+
         - name: Build with Mak
           run: make build
