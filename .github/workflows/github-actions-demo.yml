@@ -12,5 +12,8 @@ jobs:
         - name: location
           run: pwd
 
+        - name: location
+          run: ls
+
         - name: Build with Mak
           run: make build
