@@ -15,5 +15,5 @@ jobs:
         - name: location
           run: ls
 
-        - name: Build with Mak
+        - name: Build with Make
           run: make build
