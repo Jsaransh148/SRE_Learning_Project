@@ -10,7 +10,7 @@ build:
 
 # Run the Docker container in detached mode
 run:
-	docker run -d -p 8080:8443 $(IMAGE_NAME)
+	docker run -d -p 8081:8443 $(IMAGE_NAME)
 
 # Stop and remove the running container
 stop:
