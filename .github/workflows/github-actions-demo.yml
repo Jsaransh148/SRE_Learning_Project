@@ -16,4 +16,10 @@ jobs:
           run: ls
 
         - name: Build with Make
-          run: make build
+          run: make maven-build
+
+        - name: Build with Make
+          run: make maven-build
+
+        - name: Build with Make
+          run: make run

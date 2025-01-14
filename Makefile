@@ -1,13 +1,16 @@
 # Name of the Docker image
 IMAGE_NAME := petstore
 
+maven-build:
+	mvn clean install -Prelease
+
 # Build the Docker image
 build:
 	docker build -t $(IMAGE_NAME) .
 
 # Run the Docker container in detached mode
 run:
-	docker run -d -p 8443:8080 $(IMAGE_NAME)
+	docker run -d -p 8080:8443 $(IMAGE_NAME)
 
 # Stop and remove the running container
 stop:
